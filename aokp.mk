@@ -14,10 +14,11 @@
 
 $(call inherit-product, device/oneplus/oneplus2/full_oneplus2.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 # Inherit oneplus2-specific vendor tree
 $(call inherit-product-if-exists, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
 
-TARGET_UNOFFICIAL_BUILD_ID := NIGHTLY
+BUILD_FINGERPRINT=OnePlus/OnePlus2/oneplus2:6.0.1/MMB29M/2431559:userdebug/dev-keys
+PRIVATE_BUILD_DESC="oneplus2-userdebug 6.0.1 MMB29M 2431559 dev-keys"

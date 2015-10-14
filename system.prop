@@ -1,7 +1,7 @@
 # system.prop for OnePlus2
 
 ro.build.product=OnePlus2
-ro.product.device=OnePlus2
+ro.aokp.device=OnePlus2
 
 # RIL
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
